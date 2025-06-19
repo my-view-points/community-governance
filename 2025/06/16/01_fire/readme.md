@@ -44,7 +44,7 @@ timeline
 
 
 # 四、安全事故处置评价表
-<table border="1" cellspacing="3" cellpadding="3">
+<table border="1" style="border: solid 1px" cellspacing="3" cellpadding="3">
     <thead>
         <tr>
             <th></th>
@@ -495,7 +495,7 @@ timeline
 
 
 # 五、群聊记录
-<video src="video/f0f575e790bb47a9a753c20fa7d32b01.mp4"></video>
+<video controls height="800" src="video/f0f575e790bb47a9a753c20fa7d32b01.mp4"></video>
 
 
 # 六、应急预案 (by Google Gemini 2.5 Pro)
