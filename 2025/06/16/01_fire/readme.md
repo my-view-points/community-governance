@@ -1,5 +1,13 @@
 # **2025-06-16 火情外部观察报告 (b-5-e-6-0)**
 
+| 变更时间    | 变更说明      |
+| ---------- | ------------ |
+| 2025-06-16 | 梳理聊天记录   |
+| 2025-06-17 | 整理出评价点   |
+| 2025-06-18 | 整理出时间线   |
+| 2025-06-19 | 完善评价表    |
+
+
 - [**2025-06-16 火情外部观察报告 (b-5-e-6-0)**](#2025-06-16-火情外部观察报告-b-5-e-6-0)
 - [一、概要](#一概要)
 - [二、业主评价](#二业主评价)
@@ -19,7 +27,15 @@
 
 
 # 二、业主评价
+最终得分：53 / 100
 
+| 评价模块   | 满分 | 得分  |
+| --------- | -----|----- |
+| 应急响应   | 15   | 15   |
+| 现场处置   | 30   | 25   |
+| 调查分析   | 20   | 10   |
+| 善后处理   | 15   | 9   |
+| 改进与预防 | 20   | 4   |
 
 
 # 三、时间线
@@ -44,454 +60,182 @@ timeline
 
 
 # 四、安全事故处置评价表
-<table border="1" style="border: solid 1px" cellspacing="3" cellpadding="3">
-    <thead>
-        <tr>
-            <th></th>
-            <th>A</th>
-            <th>B</th>
-            <th>C</th>
-            <th>D</th>
-            <th>E</th>
-            <th>F</th>
-            <th>G</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th>
-                <div>1</div>
-            </th>
-            <td>序号</td>
-            <td>评价栏</td>
-            <td>评价项</td>
-            <td>分值</td>
-            <td>打分</td>
-            <td>说明</td>
-            <td>得分点、扣分点</td>
-        </tr>
-        <tr>
-            <th>
-                <div>2</div>
-            </th>
-            <td rowspan="2">1</td>
-            <td rowspan="2">响应评价</td>
-            <td>首次响应时间</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>3</div>
-            </th>
-            <td>到达现场时间</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>4</div>
-            </th>
-            <td rowspan="5">2</td>
-            <td rowspan="5">人员评价</td>
-            <td>相关专业技术人员到达时间，数量</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>5</div>
-            </th>
-            <td>其他人员到达时间，数量</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>6</div>
-            </th>
-            <td>安全意识</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>7</div>
-            </th>
-            <td>专业能力</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>8</div>
-            </th>
-            <td>应急流程</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>9</div>
-            </th>
-            <td rowspan="2">3</td>
-            <td rowspan="2">事故点定位评价</td>
-            <td>是否准确</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>10</div>
-            </th>
-            <td>定位耗时</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>11</div>
-            </th>
-            <td rowspan="3">4</td>
-            <td rowspan="3">故障/危险排除评价</td>
-            <td>处理耗时</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>12</div>
-            </th>
-            <td>处理是否彻底</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>13</div>
-            </th>
-            <td>处理是否有副作用</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>14</div>
-            </th>
-            <td rowspan="4">5</td>
-            <td rowspan="4">事故溯源评价</td>
-            <td>是否准确</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>15</div>
-            </th>
-            <td>肇事者是否找到</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>16</div>
-            </th>
-            <td>事故时间线是否清晰</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>17</div>
-            </th>
-            <td>公开和透明度</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>18</div>
-            </th>
-            <td rowspan="4">6</td>
-            <td rowspan="4">定损评价</td>
-            <td>物，财损失</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>19</div>
-            </th>
-            <td>人员伤亡</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>20</div>
-            </th>
-            <td>是否准确，清晰</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>21</div>
-            </th>
-            <td>公开和透明度</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>22</div>
-            </th>
-            <td rowspan="4">7</td>
-            <td rowspan="4">追责评价</td>
-            <td>肇事者</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>23</div>
-            </th>
-            <td>监管者</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>24</div>
-            </th>
-            <td>是否准确，无疑问</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>25</div>
-            </th>
-            <td>是否合法合规</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>26</div>
-            </th>
-            <td rowspan="6">8</td>
-            <td rowspan="6">预防评价</td>
-            <td>安全应急流程，措施</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>27</div>
-            </th>
-            <td>日常巡查，记录</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>28</div>
-            </th>
-            <td>规劝，处罚危险行为</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>29</div>
-            </th>
-            <td>安全培训，安全处理设备使用</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>30</div>
-            </th>
-            <td>预警设备部署</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>31</div>
-            </th>
-            <td>安全设备抽检</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>32</div>
-            </th>
-            <td rowspan="4">9</td>
-            <td rowspan="4">答疑安抚评价</td>
-            <td>是否及时公开原因，处理措施，结果</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>33</div>
-            </th>
-            <td>是否无视，敷衍业主询问</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>34</div>
-            </th>
-            <td>是否和稀泥</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>35</div>
-            </th>
-            <td>是否偏袒肇事者</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>36</div>
-            </th>
-            <td rowspan="6">10</td>
-            <td rowspan="6">透明度评价</td>
-            <td>事故报告是否详细和公开</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>37</div>
-            </th>
-            <td>事故记录是否可查询</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>38</div>
-            </th>
-            <td>应急流程是否公开</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>39</div>
-            </th>
-            <td>相关人员是否公开</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>40</div>
-            </th>
-            <td>预防措施执行是否到位</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>
-                <div>41</div>
-            </th>
-            <td>关联事情处理是否有改进</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
+最终得分：53 / 100
+
+<table border="1" style="border-collapse: collapse; width: 100%; font-family: sans-serif;">
+<thead style="background-color: #f2f2f2; text-align: center;">
+<tr>
+<th style="padding: 8px; width: 5%;">序号</th>
+<th style="padding: 8px; width: 15%;">评价模块</th>
+<th style="padding: 8px; width: 25%;">评价项</th>
+<th style="padding: 8px; width: 8%;">满分</th>
+<th style="padding: 8px; width: 8%;">得分</th>
+<th style="padding: 8px; width: 39%;">量化标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2" style="text-align: center; vertical-align: middle;">1</td>
+<td rowspan="2" style="padding: 8px; vertical-align: middle;"><b>应急响应 (15分)</b></td>
+<td style="padding: 8px;">接报响应及时性</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="padding: 8px;"><b>得分:</b> 5分钟内响应(5分)。<br><b>扣分:</b> 每超1分钟扣1分，扣完为止。</td>
+</tr>
+<tr>
+<td style="padding: 8px;">人员抵达现场及时性</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="padding: 8px;"><b>得分:</b> 规定时间(如5分钟)内首批人员到达(10分)。<br><b>扣分:</b> 每超1分钟扣2分，扣完为止。</td>
+</tr>
+<tr>
+<td rowspan="4" style="text-align: center; vertical-align: middle;">2</td>
+<td rowspan="4" style="padding: 8px; vertical-align: middle;"><b>现场处置 (30分)</b></td>
+<td style="padding: 8px;">事故定位与信息核实</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="padding: 8px;"><b>得分:</b> 定位完全准确，信息无误(5分)。<br><b>扣分:</b> 定位有偏差或耗时过长扣2分；信息核实错误扣3分。</td>
+</tr>
+<tr>
+<td style="padding: 8px;">危险控制/排除效率</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="padding: 8px;"><b>得分:</b> 快速有效控制事态，未扩大(10分)。<br><b>扣分:</b> 控制措施不当导致事态扩大扣5-10分；处理耗时超出预期扣3-5分。</td>
+</tr>
+<tr style="background-color: #FFFFE0;">
+<td style="padding: 8px;">处置操作规范与安全</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="text-align: center; vertical-align: middle;">6</td>
+<td style="padding: 8px;"><b>得分:</b> 流程规范，人员安全防护到位，无次生事故(10分)。<br><b>扣分:</b> 违反操作规程扣5分；未做安全防护扣5分；引发次生事故扣10分。</td>
+</tr>
+<tr>
+<td style="padding: 8px;">指挥协调与资源调配</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">4</td>
+<td style="padding: 8px;"><b>得分:</b> 指挥清晰，分工明确，资源调配及时(5分)。<br><b>扣分:</b> 出现指挥混乱或资源不到位的情况，每项扣2-3分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td rowspan="3" style="text-align: center; vertical-align: middle;">3</td>
+<td rowspan="3" style="padding: 8px; vertical-align: middle;"><b>调查分析 (20分)</b></td>
+<td style="padding: 8px;">原因分析与时间线还原</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="padding: 8px;"><b>得分:</b> 原因分析直达根本，时间线清晰准确(10分)。<br><b>扣分:</b> 原因分析肤浅扣5分；时间线缺失或错误扣5分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td style="padding: 8px;">定损全面性与准确性</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">2</td>
+<td style="padding: 8px;"><b>得分:</b> 人、机、物、环损失统计全面无遗漏，评估准确(5分)。<br><b>扣分:</b> 存在明显漏项扣3分；评估偏差较大扣2分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td style="padding: 8px;">责任认定合法合规性</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">1</td>
+<td style="padding: 8px;"><b>得分:</b> 责任方(肇事/监管)认定清晰，依据充分，符合法规(5分)。<br><b>扣分:</b> 责任认定不清或与事实不符扣5分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td rowspan="2" style="text-align: center; vertical-align: middle;">4</td>
+<td rowspan="2" style="padding: 8px; vertical-align: middle;"><b>善后处理 (15分)</b></td>
+<td style="padding: 8px;">沟通与安抚有效性</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="text-align: center; vertical-align: middle;">2</td>
+<td style="padding: 8px;"><b>得分:</b> 对内/外信息发布及时、口径一致，对受影响方安抚到位(10分)。<br><b>扣分:</b> 敷衍、推诿、激化矛盾(每项扣5分)；信息发布不及时/不一致(扣3分)。</td>
+</tr>
+<tr>
+<td style="padding: 8px;">现场清理与恢复</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">4</td>
+<td style="padding: 8px;"><b>得分:</b> 在规定时间内彻底清理现场，恢复秩序(5分)。<br><b>扣分:</b> 清理不彻底或恢复延迟，扣2-3分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td rowspan="3" style="text-align: center; vertical-align: middle;">5</td>
+<td rowspan="3" style="padding: 8px; vertical-align: middle;"><b>改进与预防 (20分)</b></td>
+<td style="padding: 8px;">纠正与预防措施制定</td>
+<td style="text-align: center; vertical-align: middle;">10</td>
+<td style="text-align: center; vertical-align: middle;">2</td>
+<td style="padding: 8px;"><b>得分:</b> 措施有针对性、可操作、可验证，能杜绝再发(10分)。<br><b>扣分:</b> 措施空泛或治标不治本扣5-8分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td style="padding: 8px;">文档记录与报告质量</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">1</td>
+<td style="padding: 8px;"><b>得分:</b> 事故报告和所有过程记录完整、规范，可追溯(5分)。<br><b>扣分:</b> 记录缺失扣3分；报告不规范扣2分。</td>
+</tr>
+<tr style="background-color: #FFD2D2;">
+<td style="padding: 8px;">信息公开与经验分享</td>
+<td style="text-align: center; vertical-align: middle;">5</td>
+<td style="text-align: center; vertical-align: middle;">1</td>
+<td style="padding: 8px;"><b>得分:</b> 按规定向相关方公开报告，并组织了内部经验分享(5分)。<br><b>扣分:</b> 未公开扣3分；未分享扣2分。</td>
+</tr>
+<tr style="background-color: #f2f2f2; font-weight: bold;">
+<td colspan="3" style="text-align: right; padding: 10px;">总分</td>
+<td style="text-align: center; vertical-align: middle;">100</td>
+<td style="text-align: center; vertical-align: middle;">53</td>
+<td style="text-align: left; vertical-align: middle;">得分</td>
+</tr>
+</tbody>
 </table>
+
+综合分析与改进建议
+总得分53分，说明本次事故处置的整体表现刚刚及格，但存在极其严重的短板。
+
+从评分结果来看，贵团队在事故发生初期的**“战术响应”（应急响应、现场控制）层面表现优异，行动迅速，控制得力。然而，一旦进入事故后续的“战略管理”**（调查、沟通、总结、预防）层面，则暴露出系统性的、致命的缺陷。
+
+(一) 严重警报区 (红色项：得分率 < 50%)
+
+这部分是本次复盘的重中之重，反映了组织能力的核心短板，必须立即采取行动进行系统性整改。
+
+1. 调查分析模块 (总得分 8/20，得分率40%)
+问题诊断: 这是最薄弱的环节。原因分析肤浅、定损遗漏、责任认定不清，这三个问题环环相扣，说明团队缺乏系统性的调查方法论和对法规的敬畏。这不仅影响本次事件的公正处理，更无法为未来预防提供正确方向，是典型的“只救火，不防火”。
+
+改进建议:
+引入根本原因分析法 (RCA)：强制要求使用“5 Why分析法”或“鱼骨图”等工具进行事故调查，确保分析能够触及管理的根本漏洞，而不是停留在表面原因。
+建立标准化调查工具包：制定《事故调查表》、《定损清单模板》、《谈话记录表》等标准化文件。确保调查人员“照单作业”，避免关键信息遗漏。
+责任认定流程化：明确规定责任认定必须基于哪些法规和内部制度，并形成书面报告。重大事件的责任认定，建议引入法务或第三方顾问进行审核，确保公正性和合规性。
+
+2. 善后处理模块 - 沟通与安抚 (得分 2/10，得分率20%)
+问题诊断: 沟通安抚工作几乎完全失败。这会直接导致受影响方的怨气和不信任，使小事化大，甚至引发舆论危机，让前期所有的辛苦救火成果付之一炬。
+
+改进建议:
+建立沟通预案与模板：针对不同级别的事故，预先制定沟通口径和信息发布模板。明确“谁来说、对谁说、说什么、何时说”。
+指定唯一新闻发言人：指定一名训练有素的管理者作为事故的唯一对外信息出口，避免信息混乱和口径不一。
+主动、真诚、持续沟通：变被动回答为主动通报。第一时间（如事发后1小时内）发布初步信息，后续定期更新进展。姿态上必须表现出真诚和负责，即使原因仍在调查，也要先安抚情绪。
+
+3. 改进与预防模块 (总得分 4/20，得分率20%)
+问题诊断: 这是典型的“好了伤疤忘了疼”。没有制定有效的预防措施、没有规范的文档记录、没有组织经验分享，意味着这次事故的代价被完全浪费了，下一次同类事故几乎必然会再次发生。
+
+改进建议:
+建立纠正预防措施(CAPA)跟踪系统：任何事故的调查报告必须附带一个《纠正与预防措施行动计划表》，明确具体措施、责任人、完成时限。并由专人或部门（如安委会）进行关闭验证和跟踪。
+推行“一事一档”：强制要求每次事故后形成完整的档案，包括所有原始记录、调查报告、会议纪要、预防措施等，并进行电子化归档。
+常态化“事故复盘会”：规定事故处理结束后一周内，必须由负责人组织召开跨部门的复盘会。会议的目的不是追责，而是分享经验教训，并将会议纪要公开发布。
+
+(二) 重点关注区 (黄色项：得分率 50% ~ 80%)
+
+这部分是“做得不够好”的环节，虽未完全失败，但存在明显隐患。
+
+处置操作规范与安全 (得分 6/10):
+问题诊断: 现场人员可能因情况紧急而忽略了部分操作规范或安全防护，这在混乱中极易导致救援人员自己成为受害者，或引发次生灾害。
+
+改进建议:
+加强情景化演练：日常演练不应只跑流程，要模拟各种突发状况（如设备失灵、人员受伤），强制要求在压力下也能规范操作。
+推广“安全观察员”制度：在处置现场，指定一名经验丰富的人员不参与具体操作，专门负责监督现场的安全规范执行情况，并有权随时叫停不安全行为。
+
+(三) 表现优异区
+
+应急响应与现场控制:
+肯定: 必须承认，团队在事故发生第一时间的反应速度和控制能力是过硬的，这说明日常的应急预案和一线人员的基本功是扎实的。
+保持与固化: 这是团队的优势，需要继续保持并作为培训新员工的标杆。
+
+总结性建议
+
+贵团队是一家“出色的消防队，不合格的管理师”。
+
+短期（1-3个月）：立即针对红色区域的问题，成立专项改进小组，制定详细的整改计划，责任到人，限期完成上述改进建议中的标准化工具和流程。
+
+中期（3-6个月）：全面开展针对中层管理人员和一线主管的系统性培训，重点是根本原因分析、有效沟通和闭环管理。
+
+长期（1年）：将安全管理和事故预防能力，纳入到相关部门和人员的绩效考核(KPI)中，形成“人人重预防、事事有闭环”的安全文化。
 
 
 # 五、群聊记录
