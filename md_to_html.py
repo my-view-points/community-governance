@@ -49,7 +49,20 @@ def convert(path: str):
         html = markdown2.markdown("".join(lines), extras=["tables"])
         for index, (_begin, _end, svg, pattern) in enumerate(images):
             html = pattern.sub(repl=svg, string=html, count=1)
+
+        h1 = re.search(pattern="<h1><strong>(.*?)</strong></h1>", string=html).group(1)
+        f.write(f"""<!DOCTYPE html>
+<html>
+    <head>
+        <title>{h1}</title>
+    </head>
+    <body>
+""")
         f.write(html)
+        f.write("""
+    </body>
+</html>
+""")
 
     if os.path.exists(input_path):
         os.remove(input_path)
