@@ -1,18 +1,42 @@
 # **2025-06-16 火情外部观察报告 (b-5-e-6-0)**
 
-| 变更时间    | 变更说明      |
-| ---------- | ------------ |
-| 2025-06-16 | 梳理聊天记录   |
-| 2025-06-17 | 整理出评价点   |
-| 2025-06-18 | 整理出时间线   |
-| 2025-06-19 | 完善评价表    |
+| 变更时间    | 变更说明                                  |
+| ---------- | ---------------------------------------- |
+| 2025-06-16 | 梳理聊天记录                               |
+| 2025-06-17 | 整理出评价点                               |
+| 2025-06-18 | 整理出时间线                               |
+| 2025-06-19 | 完善评价表                                |
+| 2025-06-24 | 将时间线和评价表转换为垂直方向更适应移动端阅读 |
 
 
 - [**2025-06-16 火情外部观察报告 (b-5-e-6-0)**](#2025-06-16-火情外部观察报告-b-5-e-6-0)
 - [一、概要](#一概要)
 - [二、业主评价](#二业主评价)
 - [三、时间线](#三时间线)
-- [四、安全事故处置评价表](#四安全事故处置评价表)
+- [四、安全事故处置评价表 (100分)](#四安全事故处置评价表-100分)
+  - [**（一）、应急响应 (15分)**](#一应急响应-15分)
+    - [**1. 接报响应及时性 (5分)**](#1-接报响应及时性-5分)
+    - [**2. 人员抵达现场及时性 (10分)**](#2-人员抵达现场及时性-10分)
+  - [**（二）、现场处置 (30分)**](#二现场处置-30分)
+    - [**1. 事故定位与信息核实 (5分)**](#1-事故定位与信息核实-5分)
+    - [**2. 危险控制/排除效率 (10分)**](#2-危险控制排除效率-10分)
+    - [**3. 处置操作规范与安全 (10分)**](#3-处置操作规范与安全-10分)
+    - [**4. 指挥协调与资源调配 (5分)**](#4-指挥协调与资源调配-5分)
+  - [**（三）、调查分析 (20分)**](#三调查分析-20分)
+    - [**1. 原因分析与时间线还原 (10分)**](#1-原因分析与时间线还原-10分)
+    - [**2. 定损全面性与准确性 (5分)**](#2-定损全面性与准确性-5分)
+    - [**3. 责任认定合法合规性 (5分)**](#3-责任认定合法合规性-5分)
+  - [**（四）、善后处理 (15分)**](#四善后处理-15分)
+    - [**1. 沟通与安抚有效性 (10分)**](#1-沟通与安抚有效性-10分)
+    - [**2. 现场清理与恢复 (5分)**](#2-现场清理与恢复-5分)
+  - [**（五）、改进与预防 (20分)**](#五改进与预防-20分)
+    - [**1. 纠正与预防措施制定 (10分)**](#1-纠正与预防措施制定-10分)
+    - [**2. 文档记录与报告质量 (5分)**](#2-文档记录与报告质量-5分)
+    - [**3. 信息公开与经验分享 (5分)**](#3-信息公开与经验分享-5分)
+  - [综合分析与改进建议](#综合分析与改进建议)
+    - [(一) 严重警报区 (红色项：得分率 \< 50%)](#一-严重警报区-红色项得分率--50)
+    - [(二) 重点关注区 (黄色项：得分率 50% ~ 80%)](#二-重点关注区-黄色项得分率-50--80)
+    - [(三) 表现优异区](#三-表现优异区)
 - [五、群聊记录](#五群聊记录)
 - [六、应急预案 (by Google Gemini 2.5 Pro)](#六应急预案-by-google-gemini-25-pro)
     - [I、 紧急响应与现场处置](#i-紧急响应与现场处置)
@@ -40,149 +64,176 @@
 
 # 三、时间线
 ```mermaid
-timeline
-    08：53 : 业主反馈8楼步梯间漏水
-          : 业主反馈10楼漏水和焦糊味
-          : 管家收到并通知早班同事
-    08：56 : 业主反馈11楼漏水
-          : 业主反馈12楼漏水
-    09：00 : 业主反馈14楼为事故点
-    09：06 : 业主反馈是烟头点燃纸盒
-    09：56 : 管家公布简要火情说明
-    10：00 : 管家发布9张图片
-          : 水印时间为09：00到09：02
-          : 图片显示火已熄灭
-          : 图片显示烧黑的纸盒
-          : 图片显示约谈肇事者
-    13：08 : 超过20名业主要求处罚肇事者
-          : 物业无任何后续回应
+sequenceDiagram
+    participant 业主
+    participant 管家
+    participant 物业
+
+    Note over 业主,管家: 事件开始 - 紧急情况反馈
+
+    业主->>管家: 08:53 业主反馈8楼步梯间漏水
+    业主->>管家: 08:53 业主反馈10楼漏水和焦糊味
+    管家->>管家: 08:53 收到并通知早班同事
+    业主->>管家: 08:56 业主反馈11楼漏水
+    业主->>管家: 08:56 业主反馈12楼漏水
+    业主->>管家: 09:00 业主反馈14楼为事故点
+    业主->>管家: 09:06 业主反馈是烟头点燃纸盒
+
+    Note over 管家: 事件处理与信息发布
+
+    管家->>业主: 09:56 管家公布简要火情说明
+    管家->>业主: 10:00 管家发布9张图片
+    Note over 管家: 图片水印时间09:00到09:02，显示火已熄灭，烧黑纸盒
+    管家->>肇事者: 10:00 (图片显示) 约谈肇事者
+
+    Note over 业主,物业: 业主后续诉求与物业回应
+
+    业主->>物业: 13:08 超过20名业主要求处罚肇事者
+    物业--x业主: 13:08 物业无任何后续回应
 ```
 
 
-# 四、安全事故处置评价表
-最终得分：53 / 100
+# 四、安全事故处置评价表 (100分)
+**最终得分：** 53分
 
-<table border="1" style="border-collapse: collapse; width: 100%; font-family: sans-serif;">
-<thead style="background-color: #f2f2f2; text-align: center;">
-<tr>
-<th style="padding: 8px; width: 5%;">序号</th>
-<th style="padding: 8px; width: 15%;">评价模块</th>
-<th style="padding: 8px; width: 25%;">评价项</th>
-<th style="padding: 8px; width: 8%;">满分</th>
-<th style="padding: 8px; width: 8%;">得分</th>
-<th style="padding: 8px; width: 39%;">量化标准</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td rowspan="2" style="text-align: center; vertical-align: middle;">1</td>
-<td rowspan="2" style="padding: 8px; vertical-align: middle;"><b>应急响应 (15分)</b></td>
-<td style="padding: 8px;">接报响应及时性</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="padding: 8px;"><b>得分:</b> 5分钟内响应(5分)。<br><b>扣分:</b> 每超1分钟扣1分，扣完为止。</td>
-</tr>
-<tr>
-<td style="padding: 8px;">人员抵达现场及时性</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="padding: 8px;"><b>得分:</b> 规定时间(如5分钟)内首批人员到达(10分)。<br><b>扣分:</b> 每超1分钟扣2分，扣完为止。</td>
-</tr>
-<tr>
-<td rowspan="4" style="text-align: center; vertical-align: middle;">2</td>
-<td rowspan="4" style="padding: 8px; vertical-align: middle;"><b>现场处置 (30分)</b></td>
-<td style="padding: 8px;">事故定位与信息核实</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="padding: 8px;"><b>得分:</b> 定位完全准确，信息无误(5分)。<br><b>扣分:</b> 定位有偏差或耗时过长扣2分；信息核实错误扣3分。</td>
-</tr>
-<tr>
-<td style="padding: 8px;">危险控制/排除效率</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="padding: 8px;"><b>得分:</b> 快速有效控制事态，未扩大(10分)。<br><b>扣分:</b> 控制措施不当导致事态扩大扣5-10分；处理耗时超出预期扣3-5分。</td>
-</tr>
-<tr style="background-color: #FFFFE0;">
-<td style="padding: 8px;">处置操作规范与安全</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="text-align: center; vertical-align: middle;">6</td>
-<td style="padding: 8px;"><b>得分:</b> 流程规范，人员安全防护到位，无次生事故(10分)。<br><b>扣分:</b> 违反操作规程扣5分；未做安全防护扣5分；引发次生事故扣10分。</td>
-</tr>
-<tr>
-<td style="padding: 8px;">指挥协调与资源调配</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">4</td>
-<td style="padding: 8px;"><b>得分:</b> 指挥清晰，分工明确，资源调配及时(5分)。<br><b>扣分:</b> 出现指挥混乱或资源不到位的情况，每项扣2-3分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td rowspan="3" style="text-align: center; vertical-align: middle;">3</td>
-<td rowspan="3" style="padding: 8px; vertical-align: middle;"><b>调查分析 (20分)</b></td>
-<td style="padding: 8px;">原因分析与时间线还原</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="padding: 8px;"><b>得分:</b> 原因分析直达根本，时间线清晰准确(10分)。<br><b>扣分:</b> 原因分析肤浅扣5分；时间线缺失或错误扣5分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td style="padding: 8px;">定损全面性与准确性</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">2</td>
-<td style="padding: 8px;"><b>得分:</b> 人、机、物、环损失统计全面无遗漏，评估准确(5分)。<br><b>扣分:</b> 存在明显漏项扣3分；评估偏差较大扣2分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td style="padding: 8px;">责任认定合法合规性</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">1</td>
-<td style="padding: 8px;"><b>得分:</b> 责任方(肇事/监管)认定清晰，依据充分，符合法规(5分)。<br><b>扣分:</b> 责任认定不清或与事实不符扣5分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td rowspan="2" style="text-align: center; vertical-align: middle;">4</td>
-<td rowspan="2" style="padding: 8px; vertical-align: middle;"><b>善后处理 (15分)</b></td>
-<td style="padding: 8px;">沟通与安抚有效性</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="text-align: center; vertical-align: middle;">2</td>
-<td style="padding: 8px;"><b>得分:</b> 对内/外信息发布及时、口径一致，对受影响方安抚到位(10分)。<br><b>扣分:</b> 敷衍、推诿、激化矛盾(每项扣5分)；信息发布不及时/不一致(扣3分)。</td>
-</tr>
-<tr>
-<td style="padding: 8px;">现场清理与恢复</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">4</td>
-<td style="padding: 8px;"><b>得分:</b> 在规定时间内彻底清理现场，恢复秩序(5分)。<br><b>扣分:</b> 清理不彻底或恢复延迟，扣2-3分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td rowspan="3" style="text-align: center; vertical-align: middle;">5</td>
-<td rowspan="3" style="padding: 8px; vertical-align: middle;"><b>改进与预防 (20分)</b></td>
-<td style="padding: 8px;">纠正与预防措施制定</td>
-<td style="text-align: center; vertical-align: middle;">10</td>
-<td style="text-align: center; vertical-align: middle;">2</td>
-<td style="padding: 8px;"><b>得分:</b> 措施有针对性、可操作、可验证，能杜绝再发(10分)。<br><b>扣分:</b> 措施空泛或治标不治本扣5-8分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td style="padding: 8px;">文档记录与报告质量</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">1</td>
-<td style="padding: 8px;"><b>得分:</b> 事故报告和所有过程记录完整、规范，可追溯(5分)。<br><b>扣分:</b> 记录缺失扣3分；报告不规范扣2分。</td>
-</tr>
-<tr style="background-color: #FFD2D2;">
-<td style="padding: 8px;">信息公开与经验分享</td>
-<td style="text-align: center; vertical-align: middle;">5</td>
-<td style="text-align: center; vertical-align: middle;">1</td>
-<td style="padding: 8px;"><b>得分:</b> 按规定向相关方公开报告，并组织了内部经验分享(5分)。<br><b>扣分:</b> 未公开扣3分；未分享扣2分。</td>
-</tr>
-<tr style="background-color: #f2f2f2; font-weight: bold;">
-<td colspan="3" style="text-align: right; padding: 10px;">总分</td>
-<td style="text-align: center; vertical-align: middle;">100</td>
-<td style="text-align: center; vertical-align: middle;">53</td>
-<td style="text-align: left; vertical-align: middle;">得分</td>
-</tr>
-</tbody>
-</table>
+## **<font color="cyan">（一）、应急响应 (15分)</font>**
+### **<font color="#ffa900">1. 接报响应及时性 (5分)</font>**
+**得分:** 5分
 
-综合分析与改进建议
+**量化标准:**
+
+**得分:** 5分钟内响应(5分)。
+
+**扣分:** 每超1分钟扣1分，扣完为止。
+
+### **<font color="#ffa900">2. 人员抵达现场及时性 (10分)</font>**
+**得分:** 10分
+
+**量化标准:**
+
+**得分:** 规定时间(如5分钟)内首批人员到达(10分)。
+
+**扣分:** 每超1分钟扣2分，扣完为止。
+
+## **<font color="cyan">（二）、现场处置 (30分)</font>**
+### **<font color="#ffa900">1. 事故定位与信息核实 (5分)</font>**
+**得分:** 5分
+
+**量化标准:**
+
+**得分:** 定位完全准确，信息无误(5分)。
+
+**扣分:** 定位有偏差或耗时过长扣2分；信息核实错误扣3分。
+
+### **<font color="#ffa900">2. 危险控制/排除效率 (10分)</font>**
+**得分:** 10分
+
+**量化标准:**
+
+**得分:** 快速有效控制事态，未扩大(10分)。
+
+**扣分:** 控制措施不当导致事态扩大扣5-10分；处理耗时超出预期扣3-5分。
+
+### **<font color="#ffa900">3. 处置操作规范与安全 (10分)</font>**
+**得分:** 6分
+
+**量化标准:**
+
+**得分:** 流程规范，人员安全防护到位，无次生事故(10分)。
+
+**扣分:** 违反操作规程扣5分；未做安全防护扣5分；引发次生事故扣10分。
+
+### **<font color="#ffa900">4. 指挥协调与资源调配 (5分)</font>**
+**得分:** 4分
+
+**量化标准:**
+
+**得分:** 指挥清晰，分工明确，资源调配及时(5分)。
+
+**扣分:** 出现指挥混乱或资源不到位的情况，每项扣2-3分。
+
+## **<font color="cyan">（三）、调查分析 (20分)</font>**
+### **<font color="#ffa900">1. 原因分析与时间线还原 (10分)</font>**
+**得分:** 5分
+
+**量化标准:**
+
+**得分:** 原因分析直达根本，时间线清晰准确(10分)。
+
+**扣分:** 原因分析肤浅扣5分；时间线缺失或错误扣5分。
+
+### **<font color="#ffa900">2. 定损全面性与准确性 (5分)</font>**
+**得分:** 2分
+
+**量化标准:**
+
+**得分:** 人、机、物、环损失统计全面无遗漏，评估准确(5分)。
+
+**扣分:** 存在明显漏项扣3分；评估偏差较大扣2分。
+
+### **<font color="#ffa900">3. 责任认定合法合规性 (5分)</font>**
+**得分:** 1分
+
+**量化标准:**
+
+**得分:** 责任方(肇事/监管)认定清晰，依据充分，符合法规(5分)。
+
+**扣分:** 责任认定不清或与事实不符扣5分。
+
+## **<font color="cyan">（四）、善后处理 (15分)</font>**
+### **<font color="#ffa900">1. 沟通与安抚有效性 (10分)</font>**
+**得分:** 2分
+
+**量化标准:**
+
+**得分:** 对内/外信息发布及时、口径一致，对受影响方安抚到位(10分)。
+
+**扣分:** 敷衍、推诿、激化矛盾(每项扣5分)；信息发布不及时/不一致(扣3分)。
+
+### **<font color="#ffa900">2. 现场清理与恢复 (5分)</font>**
+**得分:** 4分
+
+**量化标准:**
+
+**得分:** 在规定时间内彻底清理现场，恢复秩序(5分)。
+
+**扣分:** 清理不彻底或恢复延迟，扣2-3分。
+
+## **<font color="cyan">（五）、改进与预防 (20分)</font>**
+### **<font color="#ffa900">1. 纠正与预防措施制定 (10分)</font>**
+**得分:** 2分
+
+**量化标准:**
+**得分:** 措施有针对性、可操作、可验证，能杜绝再发(10分)。
+
+**扣分:** 措施空泛或治标不治本扣5-8分。
+
+### **<font color="#ffa900">2. 文档记录与报告质量 (5分)</font>**
+**得分:** 1分
+
+**量化标准:**
+
+**得分:** 事故报告和所有过程记录完整、规范，可追溯(5分)。
+
+**扣分:** 记录缺失扣3分；报告不规范扣2分。
+
+### **<font color="#ffa900">3. 信息公开与经验分享 (5分)</font>**
+**得分:** 1分
+
+**量化标准:**
+
+**得分:** 按规定向相关方公开报告，并组织了内部经验分享(5分)。
+
+**扣分:** 未公开扣3分；未分享扣2分。
+
+
+
+## 综合分析与改进建议
 总得分53分，说明本次事故处置的整体表现刚刚及格，但存在极其严重的短板。
 
 从评分结果来看，贵团队在事故发生初期的**“战术响应”（应急响应、现场控制）层面表现优异，行动迅速，控制得力。然而，一旦进入事故后续的“战略管理”**（调查、沟通、总结、预防）层面，则暴露出系统性的、致命的缺陷。
 
-(一) 严重警报区 (红色项：得分率 < 50%)
+### (一) 严重警报区 (红色项：得分率 < 50%)
 
 这部分是本次复盘的重中之重，反映了组织能力的核心短板，必须立即采取行动进行系统性整改。
 
@@ -210,7 +261,7 @@ timeline
 推行“一事一档”：强制要求每次事故后形成完整的档案，包括所有原始记录、调查报告、会议纪要、预防措施等，并进行电子化归档。
 常态化“事故复盘会”：规定事故处理结束后一周内，必须由负责人组织召开跨部门的复盘会。会议的目的不是追责，而是分享经验教训，并将会议纪要公开发布。
 
-(二) 重点关注区 (黄色项：得分率 50% ~ 80%)
+### (二) 重点关注区 (黄色项：得分率 50% ~ 80%)
 
 这部分是“做得不够好”的环节，虽未完全失败，但存在明显隐患。
 
@@ -221,7 +272,7 @@ timeline
 加强情景化演练：日常演练不应只跑流程，要模拟各种突发状况（如设备失灵、人员受伤），强制要求在压力下也能规范操作。
 推广“安全观察员”制度：在处置现场，指定一名经验丰富的人员不参与具体操作，专门负责监督现场的安全规范执行情况，并有权随时叫停不安全行为。
 
-(三) 表现优异区
+### (三) 表现优异区
 
 应急响应与现场控制:
 肯定: 必须承认，团队在事故发生第一时间的反应速度和控制能力是过硬的，这说明日常的应急预案和一线人员的基本功是扎实的。
