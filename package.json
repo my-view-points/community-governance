@@ -1,6 +1,0 @@
-{
-	"dependencies": {
-		"@mermaid-js/mermaid-cli": "github:mermaid-js/mermaid-cli",
-		"npx": "^10.2.2"
-	}
-}
