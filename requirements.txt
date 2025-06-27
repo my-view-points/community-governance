@@ -1,2 +1,2 @@
-markdown2==2.5.3
+markdown2[all]==2.5.3
 playwright==1.52.0

@@ -30,10 +30,10 @@ def mermaid_to_svg(mermaid_text: str) -> str:
     browser = get_browser()
     page = browser.new_page()
 
-    script = os.path.dirname(__file__) + "/mermaid@11.7.0.min.js"
+    script_path = os.path.dirname(__file__) + "/mermaid@11.7.0.min.js"
     if os.name == "nt":
-        script = script.replace("\\", "/")
-    with open(script, encoding="utf-8") as f:
+        script_path = script_path.replace("\\", "/")
+    with open(script_path, encoding="utf-8") as f:
         script = f.read()
 
     html_content = f"""
@@ -96,6 +96,12 @@ def markdown_to_html(path: str):
                 begin = None
                 end = None
 
+    style_path = os.path.dirname(__file__) + "/pygments.default@2.19.2.css"
+    if os.name == "nt":
+        style_path = style_path.replace("\\", "/")
+    with open(style_path, encoding="utf-8") as f:
+        style = f.read()
+
     html_path = os.path.join(os.path.dirname(path), "index.html")
     with open(html_path, mode="w", encoding="utf-8") as f:
         for index in range(len(images)):
@@ -103,7 +109,7 @@ def markdown_to_html(path: str):
             lines[begin : end + 1] = [f"{index}\n"] * (end + 1 - begin)
             images[index].append(re.compile(rf"<p>{index}(\n{index})+</p>"))
 
-        html = markdown2.markdown("".join(lines), extras=["tables"])
+        html = markdown2.markdown("".join(lines), extras=["fenced-code-blocks", "tables"])
         for index, (_begin, _end, svg, pattern) in enumerate(images):
             html = pattern.sub(repl=svg, string=html, count=1)
 
@@ -113,6 +119,7 @@ def markdown_to_html(path: str):
 <html>
     <head>
         <title>{h1}</title>
+        <style>{style}</style>
     </head>
     <body>
 """
