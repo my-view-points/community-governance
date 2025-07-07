@@ -5,7 +5,7 @@ App({
       wx.showToast({ title: "请使用 2.2.3 或以上的基础库以使用云能力", icon: 'none' });
     } else {
       wx.cloud.init({
-        env: 'cloud1-7gnkt7rzee36bb46', // 替换成你的环境ID
+        env: 'cloud1-', // 替换成你的环境ID
         traceUser: true,
       });
     }
