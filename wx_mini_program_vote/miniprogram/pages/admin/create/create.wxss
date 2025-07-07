@@ -1,0 +1,9 @@
+/* pages/admin/create/create.wxss */
+.container { padding: 30rpx; }
+.form-group { margin-bottom: 30rpx; }
+.label { display: block; margin-bottom: 10rpx; font-weight: bold; }
+.input, .textarea { width: 100%; border: 1rpx solid #ddd; padding: 1rpx; border-radius: 8rpx; box-sizing: border-box; }
+.options-container .option-item { display: flex; align-items: center; margin-bottom: 15rpx; }
+.options-container .input { flex: 1; margin-right: 20rpx; }
+.add-btn { margin-top: 20rpx; }
+.submit-btn { margin-top: 50rpx; }

@@ -1,0 +1,22 @@
+<!-- pages/admin/create/create.wxml -->
+<view class="container">
+  <view class="form-group">
+    <text class="label">投票名称</text>
+    <input class="input" placeholder="请输入投票名称" model:value="{{title}}"/>
+  </view>
+  <view class="form-group">
+    <text class="label">投票说明</text>
+    <textarea class="textarea" placeholder="请输入投票说明" model:value="{{description}}"></textarea>
+  </view>
+  <view class="form-group">
+    <text class="label">投票选项</text>
+    <view class="options-container">
+      <view wx:for="{{options}}" wx:key="index" class="option-item">
+        <input class="input" placeholder="请输入选项内容" model:value="{{options[index]}}"/>
+        <button class="mini-btn" size="mini" type="warn" bindtap="remove_option" data-index="{{index}}">删除</button>
+      </view>
+      <button class="add-btn" type="default" bindtap="add_option">添加选项</button>
+    </view>
+  </view>
+  <button class="submit-btn" type="primary" bindtap="create_poll">创建投票</button>
+</view>

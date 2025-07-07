@@ -1,0 +1,17 @@
+/* pages/poll/vote/vote.wxss */
+.container { padding: 30rpx; }
+.header { text-align: center; margin-bottom: 40rpx; }
+.title { font-size: 40rpx; font-weight: bold; margin-bottom: 10rpx; }
+.description { font-size: 28rpx; color: #888; }
+.admin-btn { margin-bottom: 30rpx; background-color: #ffc300; color: #fff; }
+.option-item { display: flex; align-items: center; padding: 25rpx; border: 1rpx solid #eee; border-radius: 10rpx; margin-bottom: 20rpx; }
+.option-item.can-vote { cursor: pointer; }
+.option-text { flex: 1; margin: 0 20rpx; }
+.vote-count { color: #888; }
+.results-container .tip { text-align: center; color: #999; margin-bottom: 30rpx; }
+.progress-bar { flex: 1; height: 20rpx; background-color: #f0f0f0; border-radius: 10rpx; margin: 0 20rpx; overflow: hidden; }
+.progress { height: 100%; background-color: #1aad19; border-radius: 10rpx; transition: width 0.5s; }
+.footer { margin-top: 50rpx; }
+.vote-btn { margin-bottom: 20rpx; }
+.share-btn { background-color: #f0f0f0; }
+.loading { text-align: center; padding-top: 100rpx; color: #999; }

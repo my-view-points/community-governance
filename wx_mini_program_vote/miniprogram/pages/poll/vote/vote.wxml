@@ -1,0 +1,47 @@
+<!-- pages/poll/vote/vote.wxml -->
+<view class="container" wx:if="{{poll_data}}">
+  <view class="header">
+    <view class="title">{{poll_data.title}}</view>
+    <view class="description">{{poll_data.description}}</view>
+  </view>
+
+  <!-- 管理员专属按钮 -->
+  <button wx:if="{{poll_data.is_creator}}" class="admin-btn" open-type="share" data-action="bind_group">
+    绑定此群进行投票
+  </button>
+
+  <view class="poll-body">
+    <!-- 投票区 -->
+    <radio-group bindchange="onRadioChange" wx:if="{{poll_data.can_vote}}">
+      <view wx:for="{{poll_data.options}}" wx:key="id" class="option-item can-vote">
+        <radio value="{{item.id}}" checked="{{false}}"></radio>
+        <text class="option-text">{{item.text}}</text>
+        <text class="vote-count">{{item.count}} 票</text>
+      </view>
+    </radio-group>
+
+    <!-- 结果展示区 -->
+    <view wx:else class="results-container">
+      <view class="tip" wx:if="{{poll_data.user_voted_option}}">您已投票，感谢参与！</view>
+      <view class="tip" wx:elif="{{!poll_data.is_creator}}">此投票仅限指定群成员参与，您可查看结果。</view>
+      <view wx:for="{{poll_data.options}}" wx:key="id" class="option-item result-item">
+        <text class="option-text">{{item.text}}</text>
+        <view class="progress-bar">
+          <view class="progress" style="width: {{item.percent}}%;"></view>
+        </view>
+        <text class="vote-count">{{item.count}} 票 ({{item.percent}}%)</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <button class="vote-btn" type="primary" bindtap="submit_vote" wx:if="{{poll_data.can_vote}}" disabled="{{!selected_option_id}}">
+      投出神圣一票
+    </button>
+    <button class="share-btn" open-type="share">分享给好友</button>
+  </view>
+</view>
+<view wx:else class="loading">
+  <text>加载中...</text>
+</view>
+
