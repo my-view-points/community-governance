@@ -13,9 +13,8 @@ App({
     this.global_data = {
       user_info: null,
       open_id: null,
-      union_id: null,
       is_admin: false, // 新增管理员状态
-      admin_union_id: "" // 在这里填入你的UnionID
+      admin_open_id: "" // 在这里填入你的OpenID
     };
   },
 
@@ -25,14 +24,12 @@ App({
       wx.cloud.callFunction({
         name: 'login'
       }).then(res => {
-        if (res.result && res.result.union_id) {
+        if (res.result && res.result.open_id) {
           this.global_data.open_id = res.result.open_id;
-          this.global_data.union_id = res.result.union_id;
-          // 判断是否为管理员
-          if (this.global_data.union_id === this.global_data.admin_union_id) {
+          if (this.global_data.open_id === this.global_data.admin_open_id) {
             this.global_data.is_admin = true;
           }
-          console.log('[App] 登录成功, UnionID:', this.global_data.union_id, 'Is Admin:', this.global_data.is_admin);
+          console.log('[App] 登录成功, OpenID:', this.global_data.open_id, 'Is Admin:', this.global_data.is_admin);
           resolve(res.result);
         } else {
           reject('登录失败，无法获取UnionID');

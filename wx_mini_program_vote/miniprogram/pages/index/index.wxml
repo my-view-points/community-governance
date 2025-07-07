@@ -9,11 +9,11 @@
     </view>
 
     <!-- Poll Cards -->
-    <view wx:for="{{polls}}" wx:key="_id" class="grid-item" bindtap="on_poll_tap" data-id="{{item._id}}" data-iscreator="{{union_id === item.admin_union_id}}">
+    <view wx:for="{{polls}}" wx:key="_id" class="grid-item" bindtap="on_poll_tap" data-id="{{item._id}}" data-iscreator="{{open_id === item.admin_open_id}}">
       <view class="inner">
         <view class="title">{{item.title}}</view>
         <view class="description">{{item.description}}</view>
-        <view wx:if="{{union_id === item.admin_union_id}}" class="admin-badge">我的</view>
+        <view wx:if="{{open_id === item.admin_open_id}}" class="admin-badge">我的</view>
       </view>
     </view>
   </view>

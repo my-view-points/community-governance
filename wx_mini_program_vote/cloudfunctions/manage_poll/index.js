@@ -24,7 +24,7 @@ exports.main = async (event, context) => {
   const poll = pollRes.data;
 
   // 2. 权限判断
-  const is_creator = userUnionid === poll.admin_union_id;
+  const is_creator = user_open_id === poll.admin_open_id;
 
   // 3. 根据action执行不同操作
   switch (action) {

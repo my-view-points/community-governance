@@ -2,7 +2,7 @@ Page({
   data: {
     polls: [],
     is_admin: false,
-    union_id: null
+    open_id: null
   },
 
   onLoad() {
@@ -19,7 +19,7 @@ Page({
       }
       await app.do_login();
       this.setData({ 
-        union_id: app.global_data.union_id,
+        open_id: app.global_data.open_id,
         is_admin: app.global_data.is_admin
       });
       // 登录成功后，接着加载投票列表

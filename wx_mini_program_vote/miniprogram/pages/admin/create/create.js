@@ -25,7 +25,7 @@ Page({
 
   async create_poll() {
     // 确保已登录并获取到UnionID
-    if (!app.global_data.union_id) {
+    if (!app.global_data.open_id) {
       wx.showLoading({ title: '正在获取用户信息...' });
       try {
         await app.do_login();
@@ -50,7 +50,7 @@ Page({
         title,
         description,
         options: options.filter(opt => opt.trim()),
-        admin_union_id: app.global_data.union_id
+        admin_open_id: app.global_data.open_id
       }
     }).then(res => {
       wx.hideLoading();
