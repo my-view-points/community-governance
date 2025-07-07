@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="form-group">
+    <label>投票标题</label>
+    <input value="{{title}}" bindinput="on_title_input" placeholder="请输入标题" />
+  </view>
+  <view class="form-group">
+    <label>投票描述</label>
+    <textarea value="{{description}}" bindinput="on_desc_input" placeholder="请输入描述" auto-height />
+  </view>
+  <button type="primary" bindtap="update_poll">保存修改</button>
+</view>

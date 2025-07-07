@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/admin/create/create",
+    "pages/admin/edit/edit",
     "pages/poll/vote/vote"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "群投票",
+    "navigationBarTitleText": "群投票-晒太阳计划",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

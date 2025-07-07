@@ -1,0 +1,25 @@
+.container {
+  padding: 30rpx;
+}
+
+.form-group {
+  margin-bottom: 30rpx;
+}
+
+label {
+  display: block;
+  margin-bottom: 10rpx;
+  color: #666;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 20rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20rpx;
+}

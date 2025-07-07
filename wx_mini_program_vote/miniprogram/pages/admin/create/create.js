@@ -28,7 +28,7 @@ Page({
     if (!app.global_data.union_id) {
       wx.showLoading({ title: '正在获取用户信息...' });
       try {
-        await app.doLogin();
+        await app.do_login();
         wx.hideLoading();
       } catch (e) {
         wx.hideLoading();

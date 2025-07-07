@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="poll-grid">
+    <!-- Admin: Create Poll Card -->
+    <view wx:if="{{is_admin}}" class="grid-item create-card" bindtap="on_create_tap">
+      <view class="inner">
+        <image class="icon" src="/path/to/plus-icon.png"/>
+        <text>创建新投票</text>
+      </view>
+    </view>
+
+    <!-- Poll Cards -->
+    <view wx:for="{{polls}}" wx:key="_id" class="grid-item" bindtap="on_poll_tap" data-id="{{item._id}}" data-iscreator="{{union_id === item.admin_union_id}}">
+      <view class="inner">
+        <view class="title">{{item.title}}</view>
+        <view class="description">{{item.description}}</view>
+        <view wx:if="{{union_id === item.admin_union_id}}" class="admin-badge">我的</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -75,6 +75,24 @@ exports.main = async (event, context) => {
       return { success: true };
     }
 
+    // 更新投票
+    case 'update_poll': {
+      if (!is_creator) {
+        return { success: false, error: '无权操作' };
+      }
+      const { title, description } = data;
+      if (!title || !description) {
+        return { success: false, error: '缺少标题或描述' };
+      }
+      await db.collection('polls').doc(pollId).update({
+        data: {
+          title,
+          description
+        }
+      });
+      return { success: true };
+    }
+
     // 获取投票详情（默认）
     default: {
       let can_vote = false;
@@ -93,7 +111,7 @@ exports.main = async (event, context) => {
               can_vote = true;
             }
           } catch(e) {
-            wx.showToast({ title: "解密share_ticket失败: " + e, icon: 'none' });
+            console.error("解密share_ticket失败: ", e);
           }
         }
       }

@@ -1,0 +1,66 @@
+.container {
+  padding: 20rpx;
+}
+
+.poll-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-item {
+  width: 48%;
+  margin-bottom: 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.grid-item .inner {
+  padding: 24rpx;
+  position: relative;
+}
+
+.create-card .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200rpx; /* Or adjust as needed */
+  color: #007aff;
+}
+
+.create-card .icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 16rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+  color: #333;
+}
+
+.description {
+  font-size: 26rpx;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-badge {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  background-color: #007aff;
+  color: white;
+  padding: 4rpx 12rpx;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+}

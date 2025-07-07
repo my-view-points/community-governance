@@ -38,7 +38,7 @@ exports.main = async (event, context) => {
       pollId: result._id
     }
   } catch (e) {
-    wx.showToast({ title: e, icon: 'none' });
+    console.error('create_poll failed', e)
     return {
       success: false,
       error: e
